@@ -1,8 +1,6 @@
-using System;
-using System.Collections.Generic;
 using Microsoft.Xna.Framework;
-using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Graphics;
+using Microsoft.Xna.Framework.Input;
 
 namespace TrianglePrimitive
 {
@@ -14,12 +12,10 @@ namespace TrianglePrimitive
 	public class Game1 : Microsoft.Xna.Framework.Game
 	{
 		GraphicsDeviceManager graphics;
-		SpriteBatch spriteBatch;
 
 		VertexBuffer vertexBuffer;
 
 		IndexBuffer indexBuffer;
-
 
 		BasicEffect basicEffect;
 		Matrix world = Matrix.CreateTranslation(0, 0, 0);
@@ -33,25 +29,11 @@ namespace TrianglePrimitive
 		}
 
 		/// <summary>
-		/// Allows the game to perform any initialization it needs to before starting to run.
-		/// This is where it can query for any required services and load any non-graphic
-		/// related content.  Calling base.Initialize will enumerate through any components
-		/// and initialize them as well.
-		/// </summary>
-		protected override void Initialize()
-		{
-			base.Initialize();
-		}
-
-		/// <summary>
 		/// LoadContent will be called once per game and is the place to load
 		/// all of your content.
 		/// </summary>
 		protected override void LoadContent()
 		{
-			// Create a new SpriteBatch, which can be used to draw textures.
-			spriteBatch = new SpriteBatch(GraphicsDevice);
-
 			basicEffect = new BasicEffect(GraphicsDevice);
 
 			VertexPositionColor[] vertices = new VertexPositionColor[3];

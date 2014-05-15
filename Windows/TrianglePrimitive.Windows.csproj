@@ -35,7 +35,7 @@
     <ApplicationIcon>Icon.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="..\..\Source\Game1.cs">
+    <Compile Include="..\Source\Game1.cs">
       <Link>Game1.cs</Link>
     </Compile>
     <Compile Include="Program.cs" />
@@ -43,7 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
